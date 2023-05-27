@@ -1,12 +1,12 @@
 function getComputerChoice() {
-    const choices = ['Rock',  'Paper', 'Scissors'];
+    const choices = ['Rock', 'Paper', 'Scissors'];
     let computerChoice = Math.floor(Math.random() * choices.length);
     return choices[computerChoice];
 }
 
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
-    computerSelection =  computerSelection.toLowerCase();
+    computerSelection = computerSelection.toLowerCase();
     if (playerSelection === computerSelection) {
         return "Tie";
     } else {
@@ -14,7 +14,7 @@ function playRound(playerSelection, computerSelection) {
             switch (computerSelection) {
                 case 'paper':
                     return "You Lose! Paper beats Rock";
-                
+
                 case 'scissors':
                     return "You Win! Rock beat Scissors";
             }
@@ -22,7 +22,7 @@ function playRound(playerSelection, computerSelection) {
             switch (computerSelection) {
                 case 'rock':
                     return "You Win! Paper beats Rock";
-                
+
                 case 'scissors':
                     return "You Lose! Scissors beat Paper";
             }
@@ -30,7 +30,7 @@ function playRound(playerSelection, computerSelection) {
             switch (computerSelection) {
                 case 'rock':
                     return "You Lose! Rock beats Scissors";
-                
+
                 case 'paper':
                     return "You Win! Scissors beat Paper";
             }
@@ -39,12 +39,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    let userScore = 0;
-    let computerScore = 0;
-    while (userScore < 5 && computerScore < 5) {
-        let playerChoice = prompt('Rock, Paper or Scissors?');
-        let message = playRound(playerChoice, getComputerChoice());
-        if (message.startsWith('You Win!')) userScore++;
-        if (message.startsWith('You Lose!')) computerScore++; 
-    }
+    
 }
+
+game();
