@@ -39,8 +39,12 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    for (let i = 0; i < 5; i++) {
+    let userScore = 0;
+    let computerScore = 0;
+    while (userScore < 5 && computerScore < 5) {
         let playerChoice = prompt('Rock, Paper or Scissors?');
-        console.log(playRound(playerChoice, getComputerChoice()));
+        let message = playRound(playerChoice, getComputerChoice());
+        if (message.startsWith('You Win!')) userScore++;
+        if (message.startsWith('You Lose!')) computerScore++; 
     }
 }
