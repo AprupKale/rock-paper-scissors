@@ -3,20 +3,21 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.button-section {
+.button-section,
+.play-again-button {
     display: flex;
     justify-content: center;
     gap: 5%;
 }
 
 .button {
-    width: 10%;
+    flex: 0 1 15%;
     padding: 16px;
     margin: 16px;
     font-weight: bold;
     background-color: #FAFCC2;
     border: #9EA1D4 solid 3px;
-    border-radius: 4px;
+    border-radius: 16px;
     font-size: 20px;
 }
 
@@ -27,17 +28,18 @@ body {
 }
 
 .score {
-    width: 10%;
+    flex: 0 1 15%;
     padding: 16px;
     margin: 16px;
     font-weight: bold;
     background-color: #FFE69E;
     border: #9EA1D4 solid 3px;
-    border-radius: 4px;
+    border-radius: 16px;
     text-align: center;
     font-size: 20px;
 }
 
+h1,
 h2 {
     color: #FFE69E; 
     text-align: center;
