@@ -1,6 +1,10 @@
 body {
     background-color: #456268;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Indie Flower', cursive;
+}
+
+button {
+    font-family: 'Indie Flower', cursive;
 }
 
 .button-section,
@@ -41,6 +45,6 @@ body {
 
 h1,
 h2 {
-    color: #FFE69E; 
+    color: #FFE69E;
     text-align: center;
 }
